@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <div>
+            <h1>Admin</h1>
+            <p>This URL will allow you to add into the database</p>
+        </div>
+        <div>
+            <h3>Adding to Database</h3>
+            <form method="POST" action="/add">
+                <label for="hmongInput">Hmong Word</label>
+                <input type="text" placeholder="ex:kuv..." name="hmongInput" />
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div>
+            <h3>Deleting from Database</h3>
+            <form method="POST" action="/delete">
+                <label for="hmongDeleteInput">Hmong Word</label>
+                <input type="text" placeholder="ex:kuv..." name="hmongDeleteInput" />
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
